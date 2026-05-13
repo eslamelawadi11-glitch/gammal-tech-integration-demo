@@ -1,16 +1,27 @@
-# React + Vite
+# Gammal Tech Integration Demo 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+هذا المشروع هو عرض تجريبي (Demo) لاستخدام حزمة تطوير البرمجيات الخاصة بـ **Gammal Tech SDK v3.0.1**. يركز المشروع على تطبيق عملي لنظام حجز أطباء.
 
-Currently, two official plugins are available:
+## ✨ المميزات المنفذة
+- **🔐 تسجيل الدخول:** باستخدام Gammal Tech Passport.
+- **🔍 البحث عن الأطباء:** واجهة تفاعلية للبحث عن الأطباء من قائمة بيانات.
+- **💳 نظام الدفع:** تكامل مع محفظة جمال تك (EGP) لحجز المواعيد.
+- **📦 تخزين البيانات:** حفظ سجل الحجوزات الخاص بالكل مستخدم ومزامنته عبر `GammalTech.user`.
+- **🤖 المساعد الذكي:** شات بوت طبي تفاعلي.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ التقنيات المستخدمة
+- HTML5 / CSS3 / JavaScript
+- Gammal Tech Web SDK
 
-## React Compiler
+## 🚀 كيفية التشغيل
+1. قم بتحميل الملفات.
+2. افتح ملف `index.html` في المتصفح.
+3. تأكد من تشغيل المشروع على `localhost` أو دومين معتمد في لوحة تحكم المطورين الخاصة بجمال تك.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔗 الدوال المستخدمة من الـ SDK
+- `GammalTech.pay()`: لإتمام عملية الدفع.
+- `GammalTech.payment.confirmDelivery()`: لتأكيد إتمام الخدمة.
+- `GammalTech.user.save()`: لحفظ بيانات الحجز.
+- `GammalTech.payment.settlePending()`: لاستعادة العمليات المعلقة.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+تم التطوير كجزء من مهام تدريب جمال تك.
